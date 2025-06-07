@@ -1,0 +1,15 @@
+# Ignore dependencies
+node_modules/
+
+# Ignore output images
+output/
+
+# Ignore input images (optional – comment out if you want to track source images)
+input/
+
+# Ignore logs
+*.log
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
