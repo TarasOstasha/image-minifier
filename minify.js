@@ -1,7 +1,7 @@
-const imagemin = require('imagemin');
-const imageminMozjpeg = require('imagemin-mozjpeg').default;
-const imageminPngquant = require('imagemin-pngquant').default;
-const fs = require('fs');
+import imagemin from 'imagemin';
+import imageminMozjpeg from 'imagemin-mozjpeg';
+import imageminPngquant from 'imagemin-pngquant';
+import fs from 'fs';
 
 (async () => {
   const inputDir = 'input';
@@ -19,5 +19,5 @@ const fs = require('fs');
     ]
   });
 
-  console.log(`✅ Minified ${files.length} image(s) to /${outputDir}`);
+  console.log(`✅ Minified ${files.length} image(s) to ${outputDir}`);
 })();
